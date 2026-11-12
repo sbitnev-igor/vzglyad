@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Новый Взгляд — фото букетов для вашей карточки</title>
+<meta name="description" content="Свет, фон и чистый кадр для фото ваших букетов. Сам букет не меняем. Первые 3 фото бесплатно.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F0EEE6;--surface:#FAF9F5;--ink:#141413;--muted:#5E5D59;--line:#DDD9CC;--accent:#C15F3C;--on-accent:#FFFFFF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1F1E1D;--surface:#2A2927;--ink:#F0EEE6;--muted:#B5B1A6;--line:#3E3C38;--accent:#D97757;--on-accent:#141413}}
+:root[data-theme="dark"]{--bg:#1F1E1D;--surface:#2A2927;--ink:#F0EEE6;--muted:#B5B1A6;--line:#3E3C38;--accent:#D97757;--on-accent:#141413}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 Inter,system-ui,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+h1,h2{font-family:Lora,Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+h1{font-size:clamp(34px,6vw,56px);letter-spacing:-.01em}
+h2{font-size:clamp(26px,4vw,36px);margin-bottom:28px}
+p{margin:0}
+.brand{display:flex;align-items:center;gap:10px;padding:22px 0;font-family:Lora,Georgia,serif;font-weight:600;font-size:20px}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);padding:15px 28px;border-radius:999px;font-weight:600;font-size:18px;text-decoration:none}
+.btn:hover{filter:brightness(1.07)}
+a:focus-visible,input:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:24px 0 72px}
+.hero p.lead{color:var(--muted);font-size:20px;margin:22px 0 32px;max-width:30em}
+.note{color:var(--muted);font-size:15px;margin-top:14px}
+.cmp{position:relative;width:100%;max-width:380px;aspect-ratio:7/10;margin:0 auto;border-radius:22px;overflow:hidden;border:1px solid var(--line);touch-action:pan-y;--p:50%}
+.cmp svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.cmp .before{clip-path:inset(0 calc(100% - var(--p)) 0 0)}
+.cmp .bar{position:absolute;top:0;bottom:0;left:var(--p);width:3px;margin-left:-1.5px;background:var(--surface);box-shadow:0 0 0 1px rgba(0,0,0,.2)}
+.cmp .bar::after{content:"";position:absolute;top:50%;left:50%;width:34px;height:34px;margin:-17px;border-radius:50%;background:var(--surface);border:2px solid var(--accent)}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.cmp:focus-within .bar::after{outline:3px solid var(--ink)}
+.tag{position:absolute;bottom:14px;padding:5px 14px;border-radius:999px;font-size:15px;font-weight:600}
+.tag.l{left:14px;background:#E3DFD3;color:#141413}.tag.r{right:14px;background:var(--accent);color:var(--on-accent)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:22px;max-width:680px}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:16px}
+.steps b{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-family:Lora,Georgia,serif;font-size:20px}
+.steps strong{display:block;font-size:19px}.steps span{color:var(--muted)}
+.promise{background:var(--surface);border-radius:22px;padding:36px;max-width:760px}
+.promise h2{margin-bottom:14px}.promise p{color:var(--muted)}
+.price{max-width:560px;margin:0;padding:0;list-style:none}
+.price li{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:20px}
+.price li:first-child{color:var(--accent);font-weight:600}
+.price span:last-child{font-weight:600;white-space:nowrap}
+.end{text-align:center}.end h2{margin-bottom:14px}.end p{color:var(--muted);margin-bottom:28px}
+footer{padding:28px 0 40px;color:var(--muted);font-size:15px;border-top:1px solid var(--line)}
+footer a{color:inherit}
+@media (max-width:760px){.hero{grid-template-columns:1fr;gap:36px}.promise{padding:26px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="b" viewBox="0 0 210 300">
+<ellipse cx="85" cy="150" rx="22" ry="44" fill="#7C9A6B" transform="rotate(-50 85 150)"/><ellipse cx="128" cy="152" rx="22" ry="44" fill="#6B8A5C" transform="rotate(50 128 152)"/>
+<g fill="#F7D9A4"><circle cx="105" cy="95" r="30" fill="#E58A9B"/><circle cx="70" cy="130" r="26" fill="#F2B48C"/><circle cx="140" cy="130" r="26" fill="#fff"/><circle cx="105" cy="150" r="28" fill="#D97757"/><circle cx="60" cy="95" r="22" fill="#fff"/><circle cx="150" cy="92" r="22" fill="#F2B48C"/></g>
+<g fill="#F7D9A4" fill-opacity=".85"><circle cx="105" cy="95" r="11"/><circle cx="70" cy="130" r="10"/><circle cx="140" cy="130" r="10"/><circle cx="105" cy="150" r="11"/><circle cx="60" cy="95" r="8"/><circle cx="150" cy="92" r="8"/></g>
+<polygon points="62,170 148,170 118,265 92,265" fill="#C9A27A"/><polygon points="62,170 105,200 92,265" fill="#B88D62"/><rect x="88" y="258" width="34" height="10" rx="3" fill="#D97757"/>
+</symbol></defs></svg>
+
+<div class="wrap">
+<div class="brand">
+<svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true"><path d="M6 50Q50 13 94 50Q50 87 6 50Z" fill="#FAF9F5" stroke="currentColor" stroke-width="5"/><circle cx="50" cy="50" r="17" fill="#D97757"/><circle cx="50" cy="50" r="7" fill="currentColor"/></svg>
+Новый Взгляд
+</div>
+
+<header class="hero">
+<div>
+<h1>Фото букетов, которые хочется купить</h1>
+<p class="lead">Улучшаю свет, фон и чистоту кадра. Сам букет остаётся таким, какой вы собрали: покупатель получает именно то, что видел.</p>
+<a class="btn" href="https://vk.ru/club243211689" target="_blank" rel="noopener">Получить 3 фото бесплатно</a>
+<p class="note">Напишите в сообщения сообщества ВКонтакте и пришлите фото.</p>
+</div>
+<div>
+<div class="cmp" id="cmp">
+<svg viewBox="0 0 210 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Фото после обработки"><rect width="210" height="300" fill="#FAF9F5"/><ellipse cx="105" cy="268" rx="70" ry="9" fill="#141413" fill-opacity=".1"/><use href="#b"/></svg>
+<svg class="before" viewBox="0 0 210 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Фото до обработки"><rect width="210" height="300" fill="#B9B1A4"/><rect x="10" y="20" width="70" height="110" fill="#8E8678"/><rect x="130" y="40" width="60" height="30" fill="#A29A8C"/><rect y="215" width="210" height="85" fill="#7F7767"/><circle cx="175" cy="250" r="18" fill="#9A8F7C"/><path d="M0 30L210 75" stroke="#6E675A" stroke-width="3"/><use href="#b"/><rect width="210" height="300" fill="#C9A23A" fill-opacity=".22"/><rect width="210" height="300" fill="#000" fill-opacity=".12"/></svg>
+<div class="bar"></div>
+<span class="tag l">До</span><span class="tag r">После</span>
+<input type="range" min="0" max="100" value="50" aria-label="Сравнить фото до и после">
+</div>
+<p class="note" style="text-align:center">Потяните ползунок. Пример нарисован схематично, реальные фото появятся в сообществе.</p>
+</div>
+</header>
+
+<section>
+<h2>Как это работает</h2>
+<ol class="steps">
+<li><b>1</b><div><strong>Пришлите фото</strong><span>1–3 снимка букетов в том виде, как вы обычно снимаете. Подойдёт обычный телефон.</span></div></li>
+<li><b>2</b><div><strong>Получите результат в течение дня</strong><span>Чистый фон, ровный свет, аккуратный кадр. Правки по фото бесплатны.</span></div></li>
+<li><b>3</b><div><strong>Выложите в карточку</strong><span>В ВК Маркет, Telegram или на любую площадку. Через пару дней спрошу, как отреагировали покупатели.</span></div></li>
+</ol>
+</section>
+
+<section>
+<div class="promise">
+<h2>Букет не меняю</h2>
+<p>Цветы, их количество, оттенок и упаковка остаются как есть. Меняется только то, что вокруг: фон, свет и лишние предметы в кадре. Если результат выглядит приукрашенным, я переделаю.</p>
+</div>
+</section>
+
+<section>
+<h2>Сколько это стоит</h2>
+<ul class="price">
+<li><span>Первые 3 фото</span><span>бесплатно</span></li>
+<li><span>1 фото</span><span>50 ₽</span></li>
+<li><span>Пакет из 10 фото</span><span>300 ₽</span></li>
+<li><span>Пакет из 30 фото</span><span>500 ₽</span></li>
+</ul>
+<p class="note">Цены на время запуска. Оплата переводом по СБП после того, как вам понравился результат.</p>
+</section>
+
+<section class="end">
+<h2>Начните с трёх бесплатных фото</h2>
+<p>Напишите в сообщения сообщества и пришлите ваши лучшие букеты.</p>
+<a class="btn" href="https://vk.ru/club243211689" target="_blank" rel="noopener">Написать во ВКонтакте</a>
+</section>
+</div>
+
+<footer><div class="wrap">Студия «Новый Взгляд». Фото букетов для магазинов и флористов. <a href="https://vk.ru/club243211689" target="_blank" rel="noopener">Сообщество ВКонтакте</a></div></footer>
+
+<script>
+(function(){var c=document.getElementById('cmp'),i=c.querySelector('input');
+function s(){c.style.setProperty('--p',i.value+'%')}
+i.addEventListener('input',s);s();})();
+</script>
+</body>
+</html>
